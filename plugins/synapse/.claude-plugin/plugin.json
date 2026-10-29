@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "synapse",
+  "displayName": "Synapse",
+  "version": "0.1.0",
+  "description": "Connect Claude to the Futures Platform Synapse app via FP MCP for foresight, trends, signals, and scenarios.",
+  "author": {
+    "name": "Futures Platform"
+  },
+  "keywords": [
+    "synapse",
+    "futures-platform",
+    "foresight",
+    "trends",
+    "signals",
+    "scenarios",
+    "mcp"
+  ],
+  "logo": "assets/logo.png",
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "FP_MCP_URL": {
+        "type": "string",
+        "title": "FP MCP URL",
+        "description": "HTTP MCP endpoint for Futures Platform Synapse.",
+        "default": "https://api-staging.futuresplatform.com/mcp"
+      },
+      "FP_MCP_AUTH_SCHEME": {
+        "type": "string",
+        "title": "FP MCP auth scheme",
+        "description": "Prefix before the token in the Authorization header (e.g. Bearer). Leave empty to send only the token.",
+        "default": "Bearer"
+      },
+      "FP_MCP_BEARER_TOKEN": {
+        "type": "string",
+        "title": "FP MCP bearer token",
+        "description": "Secret token for FP MCP. Sent as Authorization: <auth scheme> <token> (default scheme Bearer)."
+      }
+    },
+    "required": ["FP_MCP_BEARER_TOKEN"]
+  }
+}

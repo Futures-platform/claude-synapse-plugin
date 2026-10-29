@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "futures-platform",
+  "description": "Futures Platform plugins for Claude Code",
+  "owner": {
+    "name": "Futures Platform"
+  },
+  "plugins": [
+    {
+      "name": "synapse",
+      "displayName": "Synapse",
+      "description": "Connect to the Futures Platform Synapse app via FP MCP for foresight, trends, signals, and scenarios.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Futures Platform"
+      },
+      "source": "./plugins/synapse",
+      "category": "productivity",
+      "keywords": [
+        "synapse",
+        "futures-platform",
+        "foresight",
+        "mcp"
+      ]
+    }
+  ]
+}

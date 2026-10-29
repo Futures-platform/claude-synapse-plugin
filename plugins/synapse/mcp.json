@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "fp-mcp": {
+      "type": "http",
+      "url": "${FP_MCP_URL}",
+      "headers": {
+        "Authorization": "${FP_MCP_AUTH_SCHEME} ${FP_MCP_BEARER_TOKEN}"
+      }
+    }
+  }
+}
