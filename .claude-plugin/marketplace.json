@@ -3,7 +3,8 @@
   "name": "futures-platform",
   "description": "Futures Platform plugins for Claude Code",
   "owner": {
-    "name": "Futures Platform"
+    "name": "Futures Platform",
+    "url": "https://github.com/Futures-platform"
   },
   "plugins": [
     {
@@ -14,6 +15,9 @@
       "author": {
         "name": "Futures Platform"
       },
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/Futures-platform/claude-synapse-plugin",
+      "repository": "https://github.com/Futures-platform/claude-synapse-plugin",
       "source": "./plugins/synapse",
       "category": "productivity",
       "keywords": [

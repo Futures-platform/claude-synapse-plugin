@@ -7,6 +7,9 @@
   "author": {
     "name": "Futures Platform"
   },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/Futures-platform/claude-synapse-plugin",
+  "repository": "https://github.com/Futures-platform/claude-synapse-plugin",
   "keywords": [
     "synapse",
     "futures-platform",
